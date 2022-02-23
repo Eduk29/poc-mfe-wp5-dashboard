@@ -40,7 +40,6 @@ module.exports = {
           "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
           "bootstrap": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
 
-
           ...sharedMappings.getDescriptors()
         })
 
