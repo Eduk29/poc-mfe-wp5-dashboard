@@ -16,5 +16,10 @@ export class AppComponent implements OnInit {
     window.addEventListener('popstate', () => {
       this.router.navigateByUrl(location.pathname.substr(1));
     });
+    console.log('Router: ', this.router);
+  }
+
+  get displayNavbar(): boolean {
+    return location.port === '3001';
   }
 }

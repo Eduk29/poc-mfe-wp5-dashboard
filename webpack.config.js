@@ -28,35 +28,12 @@ module.exports = {
         "./web-components": "./src/bootstrap.ts",
       },
 
-      shared: share({
-        "@angular/core": {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: "auto",
-        },
-        "@angular/common": {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: "auto",
-        },
-        "@angular/common/http": {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: "auto",
-        },
-        "@angular/router": {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: "auto",
-        },
-        bootstrap: {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: "auto",
-        },
-
-        ...sharedMappings.getDescriptors(),
-      }),
+      shared: [
+        "@angular/core",
+        "@angular/common",
+        "@angular/router",
+        " bootstrap",
+      ],
     }),
   ],
 };
